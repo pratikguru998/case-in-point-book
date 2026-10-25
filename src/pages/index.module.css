@@ -1,0 +1,14 @@
+.hero { padding: 3.5rem 0 2.5rem; background: radial-gradient(1200px 400px at 20% 0%, rgba(13,148,136,.18), transparent), radial-gradient(900px 400px at 90% 10%, rgba(245,158,11,.14), transparent); border-bottom: 1px solid var(--pm-border); text-align: center; }
+.title { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: .5rem; }
+.sub { font-size: 1.15rem; max-width: 680px; margin: 0 auto 1.5rem; color: var(--pm-muted); }
+.ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.stats { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 2rem; }
+.stat { display: flex; flex-direction: column; padding: 10px 18px; border-radius: 12px; background: var(--pm-surface); border: 1px solid var(--pm-border); min-width: 130px; }
+.statN { font-size: 1.5rem; font-weight: 800; }
+@media (max-width: 600px) {
+  .hero { padding: 2.25rem 0 1.75rem; }
+  .sub { font-size: 1rem; padding: 0 8px; }
+  .ctas :global(.button) { width: 100%; max-width: 320px; }
+  .stat { min-width: 140px; padding: 8px 12px; }
+  .statN { font-size: 1.25rem; }
+}
